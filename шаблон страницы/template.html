@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Step by step: sport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Молодежный сайт о спорте. Здесь вы сможете найти интересующую вас информацию, расскаазанную интересным и доступным языком.">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <!-- затемнение для модальных окон -->
+    <div class="modal-overflow" id="modal-overflow" data-action="close-modal"></div>
+    <!-- всплывающие меню со ссылками -->
+    <div class="modal modal-menu modal-menu-left" id="outside-links" data-slide="left">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">Главная</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">Бег</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">Похудение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">Подготовка к ГТО/военной кафедре</a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal modal-menu modal-menu-right" id="inside-links" data-slide="right">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">Приветствие</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="">О проекте</a>
+            </li>
+        </ul>
+    </div>
+    <!-- хедер, очевидно. Пишу комменты чтобы просто было виднее разделение на блоки -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <button class="nav-wrapper__outside-links nav-links" data-action="open-modal" data-id="outside-links">
+                Навигация по сайту
+            </button>
+            <button class="nav-wrapper__inside-links nav-links" data-action="open-modal" data-id="inside-links">
+                Навигация по странице
+            </button>
+        </div>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo.svg">
+        </div>
+    </header>
+    <!-- здесь контент -->
+    <main>
+        
+    </main>
+    <!-- футер -->
+    <footer class="footer">
+        <a class="footer__anchor" href="https://t.me/stepbystep_sport">
+            <div class="footer__img-container">
+                <img src="img/tg.svg">
+            </div>
+            <span class="footer__anchor-text regular-text">
+                stepbystep_sport
+            </span>
+        </a>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>

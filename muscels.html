@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Step by step: sport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Молодежный сайт о спорте. Здесь вы сможете найти интересующую вас информацию, расскаазанную интересным и доступным языком.">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <!-- затемнение для модальных окон -->
+    <div class="modal-overflow" id="modal-overflow" data-action="close-modal"></div>
+    <!-- всплывающие меню со ссылками -->
+    <div class="modal modal-menu modal-menu-left" id="outside-links" data-slide="left">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="main.html">Главная</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="running.html">Бег</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="weightloose.html">Похудение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="muscels.html">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="gto.html">Подготовка к ГТО/военной кафедре</a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal modal-menu modal-menu-right" id="inside-links" data-slide="right">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#muscels">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#trenning">Тренировки</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#food">Питание</a>
+            </li>
+        </ul>
+    </div>
+    <!-- хедер, очевидно. Пишу комменты чтобы просто было виднее разделение на блоки -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <button class="nav-wrapper__outside-links nav-links" data-action="open-modal" data-id="outside-links">
+                Навигация по сайту
+            </button>
+            <button class="nav-wrapper__inside-links nav-links" data-action="open-modal" data-id="inside-links">
+                Навигация по странице
+            </button>
+        </div>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo.svg">
+        </div>
+    </header>
+    <!-- здесь контент -->
+    <main>
+        <section id="muscels">
+            <h2 class="title-block title">
+                НАБОР МЫШЕЧНОЙ МАССЫ
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Рациональное питание, обязательный отдых для восстановления и правильная тренировочная программа – основа для набора мышечной массы. Обратите внимание на то, что набор массы во многом определяется уровнем тестостерона. Если с ростом мышц есть проблемы, несмотря на хорошее питание и регулярные тренировки – сделайте анализ на уровень свободного тестостерона. Ниже представлены тренировки, которые помогут набрать мышечную массу. А еще чуть далее – рекомендации по составлению меню и аппетитные рецепты.
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/testosterone_level.svg">
+                </div>
+            </div>
+        </section>
+        <section id="trenning">
+            <h2 class="title-block title">
+                ТРЕНИРОВКИ
+            </h2>
+            <h3 class="subtitle-block subtitle">
+                Упражнения
+            </h3>
+            <div class="blocks-pair">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Основа тренировок на массу - это малое количеством повторений обычно от 3 до 5 с тяжелыми весами и питание, если ваше питания при этом будет не на высоком уровне вы не сможете добиться максимального прироста мышечной массы и не станете настолько сильными и настолько большими, какими действительно могли бы быть
+                    </p>
+                </div>
+                <div class="blocks-pair__buttons">
+                    <figure class="button-container m-button">
+                        <button class="inf-button m-button">
+                            <img src="img/руки 2.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                РАСТЯЖКА
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container m-button">
+                        <button class="inf-button m-button">
+                            <img src="img/ноги 2.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                НОГИ И ПЛЕЧИ
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="blocks-pair">
+                <div class="blocks-pair__buttons">
+                    <figure class="button-container m-button">
+                        <button class="inf-button m-button">
+                            <img src="img/грудь 2.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                СПИНА И ТРИЦЕПС
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container m-button">
+                        <button class="inf-button m-button">
+                            <img src="img/грудь 2.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                ГРУДЬ И БИЦЕПС
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        <b>Первый уровень:</b>
+                        4 упражнений в сумме. На каждое упражнение один подход, 1:30 минуты отдыха после упражнения.
+                        <br><b>Второй уровень:</b>
+                        4 упражнений в сумме. На каждое упражнение два подхода, 1:30 минуты отдыха после упражнения.
+                        <br><b>Третий уровень:</b>
+                        4 упражнений в сумме. На каждое упражнение три подхода, 1:30 минуты отдыха после упражнения.
+                        <br><b>Четвертый уровень:</b>
+                        4 упражнений в сумме. На каждое упражнение три подход, 1 минута отдыха после упражнения.
+                    </p>
+                </div>
+            </div>
+            <div class="accent-block accent-block--center accent-title">
+                ЕСЛИ ВЫ ЧУВСТВУЕТЕ СЕБЯ ПЛОХО - ОТДОХНИТЕ И СОКРАТИТЕ КОЛИЧЕСВТО ПОВТОРЕНИЙ
+            </div>
+            <h3 class="subtitle-block subtitle">
+                Бег
+            </h3>
+            <p class="text-block regular-text">
+                Самый подходящий бег для набора мышечной массы - спринтерский бег. Рекомендуем посмотреть статью "БЕГ", чтобы узнать необходимые упражнения
+            </p>
+            <a class="anchor button-text" href="running.html">
+                БЕГ
+            </a>
+        </section>
+        <section id="food">
+            <h2 class="title-block title">
+                ПИТАНИЕ
+            </h2>
+            <h3 class="subtitle-block subtitle">
+                Предлагаем улучшить питаниие благодаря подсчету калорий и исключению вредной пищи
+            </h3>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        <b>Исключить:</b><br>
+						Быстрые углеводы,
+						фаст-фуд,
+						соленые закуски (снэки),
+						газировку и фруктовые напитки(в них большое содержание сахара),
+						быстроусвояемые жиры: сливочное масло, свиное сало, говяжий и бараний жир.
+                    </p>
+                    <p class="text-block regular-text">
+                        <b>Включить:</b><br>
+						Большое кол-во воды,
+						мед и фрукты,
+						медленные углеводы: гречка, овсянка, цельнозерновые макароны, хлебцы.,
+						оливковое масло (Заменит другие виды масел),
+						фрукты и овощи (богаты клетчаткой),
+						куринное филе, рыба, яйца (богаты белком),
+						арахисовое масло
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/friger.svg">
+                </div>
+            </div>
+            <div class="blocks-pair">
+                <div class="blocks-pair__buttons">
+                    <figure class="button-container s-button">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="recipe-1">
+                            <img src="img/burito.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                БУРИТО
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container s-button">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="recipe-2">
+                            <img src="img/ovsyanka.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                РИС
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container s-button">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="recipe-3">
+                            <img src="img/oladyi.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                ОЛАДЬИ
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Вкусные и полезные рецепты помогут организму получить нужные микроэлементы на восстановление организма после тренировок. Благодаря этому желаемый прирост мышечной массы произойдет быстрее и приятнее.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- футер -->
+    <footer class="footer">
+        <a class="footer__anchor" href="https://t.me/stepbystep_sport">
+            <div class="footer__img-container">
+                <img src="img/tg.svg">
+            </div>
+            <span class="footer__anchor-text regular-text">
+                stepbystep_sport
+            </span>
+        </a>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>

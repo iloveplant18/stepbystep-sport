@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Step by step: sport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Молодежный сайт о спорте. Здесь вы сможете найти интересующую вас информацию, расскаазанную интересным и доступным языком.">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <!-- затемнение для модальных окон -->
+    <div class="modal-overflow" id="modal-overflow" data-action="close-modal"></div>
+    <!-- всплывающие меню со ссылками -->
+    <div class="modal modal-menu modal-menu-left" id="outside-links" data-slide="left">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="main.html">Главная</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="running.html">Бег</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="weightloose.html">Похудение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="muscels.html">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="gto.html">Подготовка к ГТО/военной кафедре</a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal modal-menu modal-menu-right" id="inside-links" data-slide="right">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#parts">Составляющие</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#trenning">Тренировки</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#food">Питание</a>
+            </li>
+        </ul>
+    </div>
+    <!-- хедер, очевидно. Пишу комменты чтобы просто было виднее разделение на блоки -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <button class="nav-wrapper__outside-links nav-links" data-action="open-modal" data-id="outside-links">
+                Навигация по сайту
+            </button>
+            <button class="nav-wrapper__inside-links nav-links" data-action="open-modal" data-id="inside-links">
+                Навигация по странице
+            </button>
+        </div>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo.svg">
+        </div>
+    </header>
+    <!-- здесь контент -->
+    <main>
+        <section id="parts">
+            <h2 class="title-block title">
+                СОСТАВЛЯЮЩИЕ
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <article class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Основа для удаления лишних сантиметров c тела. Напомним, что сбрoс веса - это стресс для организма. Поэтому мы крайне не рекомендуем морить себя голодовками: организм только усилит аппетит и будет накапливать лишний жир. Спорт повышает самооценку и уверенность в ceбe.
+                    </p>
+                    <p class="text-block regular-text">
+                        Это сказывается на восприятии мира и себя, a значит жизнь человека становится лучше c каждым днем.
+                    </p>
+                    <p class="text-block regular-text">
+                        Спорт помогает следовать современным стандартам красоты и приблизиться к идеалу.
+                    </p>
+                    <p class="text-block regular-text">
+                        Ниже представлены тренировки, которые помогут добиться красивой, подтянутой фигуры, подчеркивающей достоинства. А еще чуть далее – рекомендации по составлению меню и аппетитные рецепты.
+                    </p>
+                </article>
+                <article class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/banana.svg">
+                </article>
+            </div>
+        </section>
+        <section id="trenning">
+            <h2 class="title-block title">
+                ТРЕНИРОВКИ
+            </h2>
+            <h3 class="subtitle-block subtitle">
+                ОСНОВА ТРЕНИРОВОК ДЛЯ ПОХУДЕНИЯ
+            </h3>
+            <div class="blocks-pair">
+                <div class="blocks-pair__buttons">
+                    <figure class="button-container">
+                        <button class="inf-button m-button" data-action="open-modal" data-id="exercise-1">
+                            <img src="img/грудь 2.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                Грудь
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container">
+                        <button class="inf-button m-button" data-action="open-modal" data-id="exercise-2">
+                            <img src="img/руки 2.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                Руки
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Предлагаем вам составить программу тренировок по принципу ВИИТ.
+                    </p>
+                    <p class="text-block regular-text">
+                        Он более эффективен, чем комплекс силовых и кардионагрузок. Главный помощник в этом деле – таймер и мотивация.
+                    </p>
+                    <p class="text-block regular-text">
+                        Первые дни будет очень тяжело, но к концу недели вы привыкните упражняться.
+                    </p>
+                </div>
+            </div>
+            <div class="accent-block accent-block--center accent-title">
+                ЕСЛИ ВЫ ЧУВСТВУЕТЕ СЕБЯ ПЛОХО - СДЕЛАЙТЕ МЕНЬШЕ ПОВТОРЕНИЙ, ОТДОХНИТЕ!
+            </div>
+            <div class="blocks-pair">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        <b>Первый и второй уровень:</b><br> 5 упражнений в сумме. На каждое упражнение два подхода, где 30 секунд тренировка, 1 минута отдыха. На втором уровне все условия аналогичны, однако отдых занимает 30 секунд.
+                    </p>
+                    <p class="text-block regular-text">
+                        <b>Третий уровень:</b><br> 6 упражнений в сумме. На каждое упражнение два подхода, где 1 минута тренировка, 30 секунд отдыха.
+                    </p>
+                    <p class="text-block regular-text">
+                        <b>Четвертый уровень:</b><br> 7 упражнений в сумме.На каждое упражнение два подхода, 50 секунд тренировка, 10 секунд отдыха.
+                    </p>
+                </div>
+                <div class="blocks-pair__content">
+                    <div class="blocks-pair__buttons">
+                        <figure class="button-container">
+                            <button class="inf-button m-button" data-action="open-modal" data-id="exercise-3">
+                                <img src="img/грудь 2.svg">
+                            </button>
+                            <figcaption class="button-caption">
+                                <h4 class="subtitle-block button-subtitle">
+                                    Спина
+                                </h4>
+                            </figcaption>
+                        </figure>
+                        <figure class="button-container">
+                            <button class="inf-button m-button" data-action="open-modal" data-id="exercise-4">
+                                <img src="img/ноги 2.svg">
+                            </button>
+                            <figcaption class="button-caption">
+                                <h4 class="subtitle-block button-subtitle">
+                                    Ноги
+                                </h4>
+                            </figcaption>
+                        </figure>
+                    </div>
+                    <div class="accent-block accent-block--center accent-title">
+                        РЕГУЛЯРНОСТЬ - ЗАЛОГ УСПЕХА!
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="food">
+            <h2 class="title-block title">
+                ПИТАНИЕ
+            </h2>
+            <h3 class="subtitle-block subtitle">
+                Предлагаем улучшить питание, благодаря подсчету калорий и исключению вредной пищи!
+            </h3>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks_pair__content">
+                    <p class="text-block regular-text">
+                        <b>Исключить:</b><br>
+                        Быстрые углеводы(мучные изделия, газированные напитки, майонез и кетчуп, рисовая и манная каша), Животные жиры (сливочное масло, свиное сало, говяжий и бараний жир), Соль (Задерживает воду).
+                    </p>
+                    <p class="text-block regular-text">
+                        <b>Включить:</b><br>
+                        Мед и фрукты (поддержат баланс углеводов),Медленные углеводы(гречка, овсянка, цельнозерновые макароны, хлебцы), Оливковое масло (Заменит другие виды масел),Фрукты и овощи (богатыклетчаткой),Рыба (богата белком).
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/friger.svg">
+                </div>
+            </div>
+            <div class="blocks-pair">
+                <div class="blocks-pair__buttons">
+                    <figure class="button-container">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="recipe-1">
+                            <img src="img/rice.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                РИС
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="recipe-2">
+                            <img src="img/soup.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                СУП
+                            </h4>
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="recipe-3">
+                            <img src="img/oladyi.svg">
+                        </button>
+                        <figcaption class="button-caption">
+                            <h4 class="subtitle-block button-subtitle">
+                                ОЛАДЬИ
+                            </h4>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Вкусные и полезные рецепты помогут организму получить нужные микроэлементы на восстановление организма после тренировок. Благодаря этому желаемый прирост мышечной массы произойдет быстрее и приятнее.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- футер -->
+    <footer class="footer">
+        <a class="footer__anchor" href="https://t.me/stepbystep_sport">
+            <div class="footer__img-container">
+                <img src="img/tg.svg">
+            </div>
+            <span class="footer__anchor-text regular-text">
+                stepbystep_sport
+            </span>
+        </a>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>

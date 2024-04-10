@@ -1,0 +1,641 @@
+@font-face {
+    font-family: "Inter";
+    src: url(../fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    font-family: "Inter";
+    background-image: linear-gradient(rgba(226,210,149), rgba(177,202,195));
+}
+
+@media (min-width: 1280px) {
+    body {
+        row-gap: 64px;
+    }
+}
+
+/* шрифты */
+.title {
+    font-size: 40px;
+    font-weight: 700;
+    color: #F8F400;
+}
+
+.subtitle {
+    font-size: 36px;
+    font-weight: 700;
+    color: #2B8162;
+}
+
+.accent-title { /* текст из белых акцентных блоков */
+    font-size: 24px;
+    font-weight: 900;
+    color: #FC7A3A;
+}
+
+.button-text {
+    font-size: 40px;
+    font-weight: 700;
+    color: #2B8162;
+}
+
+.nav-links { /* текст из кнопок в хедере, по нажатию на которые открываются меню */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.link-text { /* текст ссылки из всплывающего меню */
+    font-size: 24px;
+    font-weight: 700;
+    color: #37413B;
+}
+
+.button-subtitle {
+    display: inline;
+    font-size: 24px;
+    font-weight: 700;
+    color: #2B8162;
+}
+
+.regular-text {
+   font-size: 24px;
+   color: #37413B;
+}
+
+/* на разрешении ниже 512px уменьшается размер шрифта некоторых блоков чтобы все влезло */
+@media (max-width: 512px) {
+    .title {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .accent-title {
+        font-size: 12px;
+    }
+
+    .button-text {
+        font-size: 24px;
+    }
+
+    .nav-links {
+        font-size: 20px;
+    }
+
+    .link-text {
+        font-size: 16px;
+    }
+
+    .button-subtitle {
+        font-size: 12px;
+    }
+
+    .regular-text {
+        font-size: 12px;
+    }
+}
+
+/* стили для всех кнопок */
+.anchor {
+    display: block;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    background-color: #FFFCE4;
+}
+
+    .anchor:hover {
+        cursor: pointer;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .anchor:active {
+        box-shadow: none;
+    }
+
+.inf-button {
+    aspect-ratio: 1 / 1; /* это свойство означает, что пропорции кнопки - 1 к 1 */
+    padding: 7px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #FFFCE4;
+}
+
+    .inf-button:hover {
+        cursor: pointer;
+        box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.5);
+    }
+
+    .inf-button:active {
+        box-shadow: none;
+    }
+
+.inf-button img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.m-button {
+    width: 100px;
+}
+
+.s-button {
+    width: 70px;
+}
+
+@media (min-width: 512px) {
+    .m-button{
+        width: 150px;
+    }
+
+    .s-button {
+        width: 100px;
+    }
+}
+
+@media (min-width: 720px) {
+    .m-button {
+        width: 260px;
+    }
+
+    .s-button {
+        width: 165px;
+    }
+}
+
+/* для модальных окон */
+.modal {
+    position: fixed;
+    visibility: hidden;
+    z-index: 2; /* чтобы оно было поверх всего, в том числе затемнения modal-overflow */
+}
+
+.modal-overflow {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #0B0B0B;
+    opacity: 0.3;
+    z-index: 1;
+    visibility: hidden;
+}
+
+.modal-is-open {
+    visibility: visible;
+}
+
+.slide-left {
+    animation-name: slide-left;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.slide-right {
+    animation-name: slide-right;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+/* анимации появления модальных окон */
+@keyframes slide-left {
+    from {
+        left: -100vw;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes slide-right {
+    from {
+        right: -100vw;
+    }
+    to {
+        right: 0;
+    }
+}
+
+/* классы для различных блоков сайта пишутся в порядке их появления в разметке */
+/* всплывающие меню */
+.modal-menu {
+    top: 0;
+    box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
+    background-color: #D9D9D9;
+}
+
+.modal-menu-left {
+    left: 0;
+}
+
+.modal-menu-right {
+    right: 0;
+}
+
+.modal-menu__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-menu__close {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    border: 0;
+    background-color: transparent;
+}
+
+.modal-menu__close:hover {
+    cursor: pointer;
+}
+
+.modal-menu__close-img {
+    display: block;
+}
+
+.modal-menu__close-img::before,
+.modal-menu__close-img::after 
+{
+    content: '';
+    display: block;
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background-color: #2B8162;
+}
+
+.modal-menu__close-img::before {
+    transform: rotate(-45deg);
+}
+
+.modal-menu__close-img::after {
+    transform: rotate(45deg);
+}
+
+.modal-menu__list {
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+
+.modal-menu__link-container {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.modal-menu__link {
+    display: block;
+    width: 100%;    
+    text-decoration: none;
+    line-height: 40px;
+}
+
+.modal-menu__link:hover {
+    background-color: #a2a7a4;
+}
+
+@media (min-width: 720px) {
+    .modal-menu {
+        width: 40vw;
+    }
+}
+
+@media (min-width: 1600px) {
+    .modal-menu {
+        width: 26vw;
+    }
+}
+
+/* header */
+.header {
+    height: fit-content;
+    background-image: url("../img/sport_zal.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.nav-wrapper {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(89, 89, 89, 0.5);
+}
+
+/* классы для кнопок, по нажатию на которые появляются меню с внешними ссылками на другие страницы или якорями */
+.nav-wrapper__outside-links { 
+    text-align: left;
+    color: #FFFCE4;
+    background-color: transparent;
+    border: 0;
+}
+
+    .nav-wrapper__outside-links:hover {
+        cursor: pointer;
+    }
+
+.nav-wrapper__inside-links {
+    text-align: right;
+    color: #FDB302;
+    background-color: transparent;
+    border: 0;
+}
+
+    .nav-wrapper__inside-links:hover {
+        cursor: pointer;
+    }
+
+.header__logo-container {
+    width: 300px;
+    margin: 0 auto;
+    padding: 61px 0;
+}
+
+.header__logo {
+    width: 100%;
+}
+
+@media (min-width: 720px) {
+    .header__logo-container {
+        width: 500px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .header__logo-container {
+        width: 700px;
+    }
+}
+
+/* content */
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+}
+
+section {
+    width: 280px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.title-block { 
+    width: fit-content;
+    margin: 0;
+    padding: 0 10px 0 100vw;
+    transform: translateX(-100vw);
+    background-color: #307061;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+@media (min-width: 720px) {
+    .title-block {
+        text-wrap: nowrap;
+    }
+}
+
+.subtitle-block {
+    margin: 0;
+}
+
+.blocks-pair { /* контент на странице распологается парами текст-картинка, поэтому введен такой класс */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 24px; 
+}
+
+.blocks-pair--reverse { /* если в блоке сначаала идет контет, а только потом картинка, то на маленьких разрешениях нужно поменять порядок элементов, чтобы сначала была картинка, а потом контент */
+    flex-direction: column-reverse;
+}
+
+.blocks-pair__content { /* контейнер для контента */
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+}
+
+.blocks-pair__img-container { /* контейнер для картинки */
+    width: 100%;
+    height: 200px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.blocks-pair__img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.blocks-pair__buttons {
+    display: flex;
+    justify-content: center;
+    column-gap: 24px;
+}
+
+.button-container {
+    margin: 0;
+    text-align: center;
+}
+
+.button-caption {
+    margin-top: 7px;
+    text-align: center;
+}
+
+.text-block {
+    margin: 0;
+    flex-grow: 0;
+}
+
+.anchors-list { /* классы для блоков со ссылками на другие наши страницы */
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    list-style: none;
+}
+
+.accent-block { /* классы для акцентных белых блоков с оранжевым текстом */
+    width: fit-content;
+    padding: 15px;
+    background-color: #FFFCE4;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.accent-block--center {
+    margin: 0 auto;
+}
+
+.accent-block--right {
+    margin: 0 auto;
+}
+
+.accent-block--right {
+    margin: 0 auto;
+}
+
+@media (min-width: 512px) {
+    section {
+        width: 450px;
+    }
+
+    .accent-block {
+        padding: 20px;
+    }
+}
+
+@media (min-width: 720px) {
+    section {
+        width: 650px;
+    }
+    
+    .blocks-pair__img-container {
+        height: 300px;
+    }
+}
+
+@media (min-width: 1100px) {
+    section {
+        width: 900px;
+    }
+
+    .blocks-pair {
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 32px;
+    }
+
+    .blocks-pair__img-container {
+        flex-grow: 1;   
+        width: auto;
+    }
+
+    .accent-block {
+        padding: 40px;
+    }
+
+    .accent-block--left {
+        margin: 0;
+        margin-right: auto;
+    }
+
+    .accent-block--right {
+        margin: 0;
+        margin-left: auto;
+    }
+
+    
+}
+
+@media (min-width: 1400px) {
+    section {
+        width: 1200px;
+    }
+
+    .blocks-pair__img {
+        height: 100%;
+    }
+}
+
+@media (min-width: 1700px) {
+    section {
+        width: 1500px;
+    }
+}
+
+/* у некоторых блоков ширина должна быть 50%, поэтому им прописан такой класс */
+@media (min-width: 1100px){ /* класс активен только начиная сс этого разрешения потому что анчиная с него контент распологается в строку, а не в столбец */
+    .half-size-block {
+        width: 50%;
+    }
+}
+
+/* таблицы */
+.table-container {
+    overflow-x: scroll;
+    -ms-overflow-style: none; /* IE lol */
+    scrollbar-width: none; /* firefox */
+}
+
+.table-container::-webkit-scrollbar { /* not-gay-browsers */
+    width: 0px;  /* ширина scrollbar'a */
+}
+
+table {
+    font-size: 24px;
+    font-weight: 700;
+    border: 2px solid #a2a7a4;
+    color: #FC7A3A;
+    background-color: #FFFCE4;
+    border-collapse: collapse;
+}
+
+thead td {
+    text-align: start;
+}
+
+td:nth-child(1) {
+    text-align: start;
+}
+
+td {
+    text-align: end;
+    border: 2px solid #a2a7a4;
+}
+
+/* совет */
+.tip {
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #D9D9D9;
+    color: #37413B;
+    border-radius: 10px;
+}
+
+@media (min-width: 1100px) {
+    .tip--tabletop {
+        display: none;
+    }
+}
+
+/* футер */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #D9D9D9;
+}
+
+.footer__img-container {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer__anchor {
+    text-decoration: none;
+}
+
+.footer__anchor-text {
+    text-decoration: underline;
+}

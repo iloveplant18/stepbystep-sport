@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Step by step: sport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Молодежный сайт о спорте. Здесь вы сможете найти интересующую вас информацию, расскаазанную интересным и доступным языком.">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <!-- затемнение для модальных окон -->
+    <div class="modal-overflow" id="modal-overflow" data-action="close-modal"></div>
+    <!-- всплывающие меню со ссылками -->
+    <div class="modal modal-menu modal-menu-left" id="outside-links" data-slide="left">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="main.html">Главная</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="running.html">Бег</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="weightloose.html">Похудение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="muscels.html">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="gto.html">Подготовка к ГТО/военной кафедре</a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal modal-menu modal-menu-right" id="inside-links" data-slide="right">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#terms">Определения</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#form">Физическая форма</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#compare">Сравнение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#exercise">Как готовиться</a>
+            </li>
+        </ul>
+    </div>
+    <!-- хедер, очевидно. Пишу комменты чтобы просто было виднее разделение на блоки -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <button class="nav-wrapper__outside-links nav-links" data-action="open-modal" data-id="outside-links">
+                Навигация по сайту
+            </button>
+            <button class="nav-wrapper__inside-links nav-links" data-action="open-modal" data-id="inside-links">
+                Навигация по странице
+            </button>
+        </div>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo.svg">
+        </div>
+    </header>
+    <!-- здесь контент -->
+    <main>
+        <section id="terms">
+            <h2 class="title-block title">
+                ОПРЕДЕЛЕНИЯ
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        <b>ГТО</b> - Готов к труду и обороне — всероссийский физкультурно-спортивный комплекс, направленный на развитие человеческого потенциала и укрепление здоровья населения.
+                    </p>
+                    <p class="text-block regular-text">
+                        <b>ВУЦ</b> – военный учебный центр, подразделение в гражданском ВУЗе, в котором проводится очное обучение по программам военной подготовки. Благодаря этому студент по окончании университета не тратит год на срочную военную службу. В некоторых университетах за ВУЦ предусмотрены доплаты к стипендии. После зачисления студентам необходимо раз в неделю прибывать в военный учебный центр, где обучают строевой подготовке, огневой подготовке, тактическим навыкам, личной физической подготовке и прочим элементам в зависимости от того, на какую специальность вы поступили. На теоретических занятиях изучают уставы, приказы и дисциплины, которые соответствуют их военной профессии. На практических занятиях применяют эти знания.
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/medal.svg">
+                </div>
+            </div>
+        </section>
+        <section id="form">
+            <h2 class="title-block title">
+                ФИЗИЧЕСКАЯ ФОРМА
+            </h2>
+            <h3 class="subtitle-block subtitle">
+                В какой физической форме должен быть поступающий?
+            </h3>
+            <div class="blocks-pair">
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/person.svg">
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Для сдачи норм ГТО необходимо иметь 1 группу здоровья, то есть нормальное физическое и психическое развитие без функциональных дефектов и морфологических нарушений. В случае с ВУЦ, необходимо пройти медицинскую комиссию, которая выдаст разрешение участвовать в конкурсе на поступление.
+                    </p>
+                    <div class="accent-block accent-block--center accent-title">
+                        ИНФОРМАЦИЮ О ВУЦ УЗНАВАЙТЕ ПРИ ПОСТУПЛЕНИИ
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="compare">
+            <h2 class="title-block title">
+                СРАВНЕНИЕ
+            </h2>
+            <div class="tip tip--tabletop">
+                *Таблицы можно скроллить
+            </div>
+            <article class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Баллы</td>
+                            <td>Бег 3000м (мин)</td>
+                            <td>Бег 100м (с)</td>
+                            <td>Подтягивание из виса на высокой перекладине (количество раз)</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>100</td>
+                            <td>10:30</td>
+                            <td>12</td>
+                            <td>25</td>
+                        </tr>
+                        <tr>
+                            <td>80</td>
+                            <td>11:20</td>
+                            <td>13</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>50</td>
+                            <td>13:20</td>
+                            <td>14,1</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>30 (минимальный проходной балл)</td>
+                            <td>14:40</td>
+                            <td>15,4</td>
+                            <td>5</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <article class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Нормативы</td>
+                            <td>Бег на 3000м</td>
+                            <td>Бег на 100м</td>
+                            <td>Подтягивание из виса на высокой перекладине (количество раз)</td>
+                            <td>Наклон вперед из положения стоя на гимнастической скамье (см)</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Золото</td>
+                            <td>12:20</td>
+                            <td>13,2</td>
+                            <td>15</td>
+                            <td>13</td>
+                        </tr>
+                        <tr>
+                            <td>Серебро</td>
+                            <td>14:10</td>
+                            <td>14,1</td>
+                            <td>12</td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>Бронза</td>
+                            <td>15:20</td>
+                            <td>14,8</td>
+                            <td>8</td>
+                            <td>6</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+            <div class="blocks-pair">
+                <article class="blocks-pair__content">
+                    <h3 class="subtitle-block subtitle">
+                        Сходства
+                    </h3>
+                    <p class="text-block regular-text">
+                        Бег на выносливость, бег на скорость, подтягивания на перекладине. Необходима серьезная подготовка для успешной сдачи.
+                    </p>
+                </article>
+                <article class="blocks-pair__content">
+                    <h3 class="subtitle-block subtitle">
+                        Различия
+                    </h3>
+                    <p class="text-block regular-text">
+                        Для поступления в ВУЦ необходимы именно те упражнения, которые представлены в таблице, а для сдачи норм ГТО можно выбирать, например, заменить подтягивания отжиманиями от пола.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <section id="exercise">
+            <h2 class="title-block title">
+                КАК ГОТОВИТЬСЯ
+            </h2>
+            <div class="blocks-pair">
+                <div class="blocks-pair__buttons">
+                    <figure class="button-container s-button">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="exercise-1">
+                            <img src="img/krossovok.svg">
+                        </button>
+                        <figcaption class="button-caption button-subtitle">
+                            БЕГ
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container s-button">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="exercise-2">
+                            <img src="img/turnik.svg">
+                        </button>
+                        <figcaption class="button-caption button-subtitle">
+                            ТУРНИК
+                        </figcaption>
+                    </figure>
+                    <figure class="button-container s-button">
+                        <button class="inf-button s-button" data-action="open-modal" data-id="exercise-3">
+                            <img src="img/degree.svg">
+                        </button>
+                        <figcaption class="button-caption button-subtitle">
+                            РАСТЯЖКА
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Перед выполнением любых упражнений настоятельно рекомендуется выполнить качественную разминку, чтобы избежать различного рода травм!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- футер -->
+    <footer class="footer">
+        <a class="footer__anchor" href="https://t.me/stepbystep_sport">
+            <div class="footer__img-container">
+                <img src="img/tg.svg">
+            </div>
+            <span class="footer__anchor-text regular-text">
+                stepbystep_sport
+            </span>
+        </a>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>

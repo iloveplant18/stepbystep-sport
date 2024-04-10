@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Step by step: sport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Молодежный сайт о спорте. Здесь вы сможете найти интересующую вас информацию, расскаазанную интересным и доступным языком.">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <!-- затемнение для модальных окон -->
+    <div class="modal-overflow" id="modal-overflow" data-action="close-modal"></div>
+    <!-- всплывающие меню со ссылками -->
+    <div class="modal modal-menu modal-menu-left" id="outside-links" data-slide="left">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="main.html">Главная</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="running.html">Бег</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="weightloose.html">Похудение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="muscels.html">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="gto.html">Подготовка к ГТО/военной кафедре</a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal modal-menu modal-menu-right" id="inside-links" data-slide="right">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#hi">Приветствие</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#project">О проекте</a>
+            </li>
+        </ul>
+    </div>
+    <!-- хедер, очевидно. Пишу комменты чтобы просто было виднее разделение на блоки -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <button class="nav-wrapper__outside-links nav-links" data-action="open-modal" data-id="outside-links">
+                Навигация по сайту
+            </button>
+            <button class="nav-wrapper__inside-links nav-links" data-action="open-modal" data-id="inside-links">
+                Навигация по странице
+            </button>
+        </div>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo.svg">
+        </div>
+    </header>
+    <!-- здесь контент -->
+    <main>
+        <section id="hi">
+            <h2 class="title-block title">
+                Приветствие
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Приветствуем на сайте Step by Step: Sport! Здесь ты сможешь найти самое полезное по интересующей тебя теме без воды, рассказанное интересным и понятным языком. Удачи, главное помнить свою цель и шаг за шагом идти ней.
+                    </p>
+                    <ul class="anchors-list">
+                        <li>
+                            <a class="anchor button-text">БЕГ</a>
+                        </li>
+                        <li>
+                            <a class="anchor button-text">ПОХУДЕНИЕ</a>
+                        </li>
+                        <li>
+                            <a class="anchor button-text">МЫШЕЧНАЯ МАССА</a>
+                        </li>
+                        <li>
+                            <a class="anchor button-text">ГТО/ВОЕННАЯ КАФЕДРА</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/waving_hand.svg">
+                </div>
+            </div>
+        </section>
+        <section id="project">
+            <h2 class="title-block title">
+                О ПРОЕКТЕ
+            </h2>
+            <h3 class="subtitle-block subtitle">
+                Контент
+            </h3>
+            <div class="blocks-pair">
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/data-searching.svg">
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        Сайт разработан согласно пожеланиям целевой аудитории.<br><br> 
+                        Мы учитывали каждый отклик в опросе.<br><br>
+                        Надеемся, что тебе будет приятно это читать и ты с пользой проведешь время. Все это может помочь сделать еще один шаг в достижении твоих спортивных целей.
+                    </p>
+                </div>
+            </div>
+            <div class="accent-block accent-block--center accent-title">
+                ВСЮ ИНФОРМАЦИЮ НА САЙТЕ ПРОВЕРИЛИ ПРЕПОДАВАТЕЛИ КАФЕДРЫ ФИЗИЧЕСКОЙ КУЛЬТУРЫ
+            </div>
+            <h3 class="subtitle-block subtitle">
+                Контактная информация
+            </h3>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        <b>E-mail:</b><br>
+                        liana.pochta.ogogo<wbr>@mail.ru<br>
+                        zdrastvuyte_eto_yaszhik<wbr>@gmail.com - по вопросам сотрудничества<br>
+                        <b>VK:</b><br>
+                        @maxbaliukov - техническая поддержка, готовая днем и ночью ответить на все интересующие вас вопросы по сайту и просто по жизни<br>
+                        <b>Telegram:</b><br>
+                        t.me/stepbystep_sport
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/phone.svg">
+                </div>
+            </div>
+            <div class="accent-block accent-title accent-block--right">
+                ЖДЕМ ОБРАТНУЮ СВЯЗЬ
+            </div>
+            <h3 class="subtitle-block subtitle">
+                Авторы
+            </h3>
+            <div class="blocks-pair">
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/authors.svg">
+                </div>
+                <div class="blocks-pair__content">
+                    <p class="text-block regular-text">
+                        <b>Косолапенкова Лиана</b> - основатель идеи, дизайнер, программист, контентмейкер<br>  
+                        <b>Гаенко Иван</b>  - лидер, программист<br>
+                        <b>Колтунов Евгений</b>  – программист<br>       
+                        <b>Балюков Максим</b>  - контентмейкер<br>       
+                        <b>Неведрова Ольга</b> – дизайнер<br>            
+                        <b>Зданевич Андрей</b>  – программист<br>             
+                        <b>Вильчук Валерий</b>  – программист<br>                              
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- футер -->
+    <footer class="footer">
+        <a class="footer__anchor" href="https://t.me/stepbystep_sport">
+            <div class="footer__img-container">
+                <img src="img/tg.svg">
+            </div>
+            <span class="footer__anchor-text regular-text">
+                stepbystep_sport
+            </span>
+        </a>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>

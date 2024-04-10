@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Step by step: sport</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Молодежный сайт о спорте. Здесь вы сможете найти интересующую вас информацию, расскаазанную интересным и доступным языком.">
+    <link rel="stylesheet" href="css/template.css">
+</head>
+<body>
+    <!-- затемнение для модальных окон -->
+    <div class="modal-overflow" id="modal-overflow" data-action="close-modal"></div>
+    <!-- всплывающие меню со ссылками -->
+    <div class="modal modal-menu modal-menu-left" id="outside-links" data-slide="left">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="main.html">Главная</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="running.html">Бег</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="weightloose.html">Похудение</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="muscels.html">Набор мышечной массы</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="gto.html">Подготовка к ГТО/военной кафедре</a>
+            </li>
+        </ul>
+    </div>
+    <div class="modal modal-menu modal-menu-right" id="inside-links" data-slide="right">
+        <div class="modal-menu__head">
+            <div class="modal-menu__title subtitle">
+                Step by step: sport
+            </div>
+            <button class="modal-menu__close" data-action="close-modal">
+                <i class="modal-menu__close-img"></i>
+            </button>
+        </div>
+        <ul class="modal-menu__list">
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#param">Параметры</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#interview">Интервью</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#start">С чего начать</a>
+            </li>
+            <li class="modal-menu__link-container">
+                <a class="modal-menu__link link-text" href="#variable">Разнообразие</a>
+            </li>
+        </ul>
+    </div>
+    <!-- хедер, очевидно. Пишу комменты чтобы просто было виднее разделение на блоки -->
+    <header class="header">
+        <div class="nav-wrapper">
+            <button class="nav-wrapper__outside-links nav-links" data-action="open-modal" data-id="outside-links">
+                Навигация по сайту
+            </button>
+            <button class="nav-wrapper__inside-links nav-links" data-action="open-modal" data-id="inside-links">
+                Навигация по странице
+            </button>
+        </div>
+        <div class="header__logo-container">
+            <img class="header__logo" src="img/logo.svg">
+        </div>
+    </header>
+    <!-- здесь контент -->
+    <main>
+        <section id="param">
+            <h2 class="title-block title">
+                ПАРАМЕТРЫ
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content  half-size-block">
+                    <p class="text-block regular-text">
+                        Вес является одним из ключевых факторов, влияющих на скорость бега. Чем выше масса тела, тем труднее совершать быстрые движения и поддерживать высокий темп бега. Кроме того, при беге с избыточным весом, увеличивается нагрузка на суставы и костную ткань, что может привести к повреждениям и травмам.
+                    </p>
+                    <div class="accent-block accent-title">
+                        Чем больше мышечная масса (при прочих равных условиях), тем большую скорость может развить бегун. При этом время, которое он выдержит на высокой скорости сокращается.
+                    </div>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/vesi.svg">
+                </div>
+            </div>
+            <div class="blocks-pair">
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/rost.svg">
+                </div>
+                <div class="blocks-pair__content half-size-block">
+                    <p class="text-block regular-text">
+                        Рост человека влияет на длину шага, но не всегда на скорость. Она в основном зависит от скорости, с которой человек может переставлять ноги, его веса, и легких, как эти ни странно.  
+                    </p>
+                    <div class="accent-block accent-title">
+                        Чем меньше масса тела, тем спортсмен выносливее и тем быстрее он будет на длинных дистанциях (>1000м).
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="interview">
+            <h2 class="title-block title">
+                ИНТЕРВЬЮ
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content half-size-block">
+                    <h3 class="subtitle-block subtitle">
+                        Как начать заниматься?
+                    </h3>
+                    <p class="text-block regular-text">
+                        Бег становится кайфовым, когда уже какое-то время потренировался, и он перестал вызывать дискомфорт - ты привык к бегу и можешь в расслабленном темпе бежать сколь угодно долго.
+                    </p>
+                    <h3 class="subtitle-block subtitle">
+                        Чем помогает бег?
+                    </h3>
+                    <p class="text-block regular-text">
+                        Лично мне бег помогает разгрузиться психически и насладиться природой, когда бегаю на улице. В жизни любые виды спорта очень положительно влияют на характер. Когда занимаешься спортом - начинаешь лучше преодолевать жизненные трудности, перестаешь жалеть себя, добиваешься целей.
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/vopros.svg">
+                </div>
+            </div>
+            <div class="blocks-pair">
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/krossovok.svg">
+                </div>
+                <div class="blocks-pair__content half-size-block">
+                    <h3 class="subtitle-block subtitle">
+                        Почему именно бег?
+                    </h3>
+                    <p class="text-block regular-text">
+                        Я выбрал занятия бегом, потому что я люблю свежий воздух, мне нравится смена картинки перед глазами, не люблю монотонно тягать железки, также бег прокачивает мою выносливость - меньше устаешь в течение дня, быстрее восстанавливаешься, в т.ч. и морально.
+                    </p>
+                    <h3 class="subtitle-block subtitle">
+                        На какие дистанции бегаешь?
+                    </h3>
+                    <p class="text-block regular-text">
+                        Бегаю в основном на выносливость - длинные дистанции, пока до 10 км.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="start">
+            <h2 class="title-block title">
+                С ЧЕГО НАЧАТЬ
+            </h2>
+            <div class="blocks-pair blocks-pair--reverse">
+                <div class="blocks-pair__content">
+                    <h3 class="subtitle-block subtitle">
+                        Обычный бег
+                    </h3>
+                    <p class="text-block regular-text">
+                        Обычный бег – это универсальный вид бега.
+                        Правильной техникой для него считается: умение бегать свободно, легко, с естественными движениями рук.
+                        Во время выполнения <b>руки</b> полусогнуты в локтях, пальцы свободно согнуты, но не сжаты в кулаки. При беге руки движутся вперед до уровня груди, после чего отводятся локтями назад - в стороны.
+                        <br><b>Нога</b>, несколько согнутая в колене, наступает на переднюю часть стопы. При увеличении беговых шагов нога ставится с пятки с последующим мягким опусканием на всю стопу. При отталкивании обязательно разогнуть ногу в колене. Носки стоп находятся параллельно друг другу, следовательно, в стороны не разводятся.
+                        <br><b>Туловище</b> слегка наклонено вперед, спина прямая.
+                        <br><b>Голова</b> смотрит прямо или несколько вверх.
+                        <br><b>Запрещено</b> поворачиваться вслед за рукой, это может вызвать чрезмерный поворот туловища.
+                        <br><b>Дыхание</b> - вдох проходит через нос и всегда должен быть немного короче, чем выдох ртом.
+                    </p>
+                </div>
+                <div class="blocks-pair__img-container">
+                    <img class="blocks-pair__img" src="img/begun.svg">
+                </div>
+            </div>
+            <div class="accent-block accent-block--center accent-title">
+                Этот вид бега является основой для последующих видов, так как учит спортсменов координировать движения и не сбиваться с заданного темпа.
+            </div>
+        </section>
+        <section id="variable">
+            <h2 class="title-block title">
+                РАЗНООБРАЗИЕ
+            </h2>
+            <p class="text-block regular-text">
+                <br><b>Спринтерский бег</b> – бег на короткие дистанции, 100-200-300 метров. Суть этого вида заключается в их прохождении за минимальный промежуток времени. Победителя определяет фотофиниш.
+                <br><b>Бег на средние дистанции</b> – дистанция увеличивается до 800-1500-3000м, Спортсмены бегут более расслабленно, чтобы не уставать, а на последних 100метрах ускоряются.
+                <br><b>Стайерский</b> – бег на длинные дистанции от 3000 метров на стадионе, свыше 10 000 – на шоссе. Чтобы не уставать нужно правильно дышать - на каждые два шага один глубокий вдох, на следующие два – выдох. При ускорении ускорится и ритм дыхания.
+                <br><b>Стипль-чез</b> – бег с препятствиями на дистанциях 2000-3000метров, включающий 5 препятствий из хвороста, живых изгородей и водяная канава. Их необходимо перепрыгивать, поэтому помимо бега нужна развивать и другие техники.
+                <br><b>Бег с барьерами</b> – спринтерский вид с препятствиями, которые нужно перепрыгивать. Проще предыдущего вида соревнований.
+                <br><b>Эстафетный</b> – вид, включающий в себя одну из двух дистанций: на 100 метров и на 400, которые нужно пробежать 4 раза, передавая предмет.
+            </p>
+        </section>
+    </main>
+    <!-- футер -->
+    <footer class="footer">
+        <a class="footer__anchor" href="https://t.me/stepbystep_sport">
+            <div class="footer__img-container">
+                <img src="img/tg.svg">
+            </div>
+            <span class="footer__anchor-text regular-text">
+                stepbystep_sport
+            </span>
+        </a>
+    </footer>
+    <script src="js/modal.js"></script>
+</body>
+</html>
